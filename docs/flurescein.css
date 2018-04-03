@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+  user-select: none;
+  z-index: 2; }
+  .social-networks a:first-child {
+    margin-right: 50px; }
+  .social-networks a:last-child {
+    margin-left: 50px; }
+  .social-networks .social-network img {
+    width: 50px;
+    height: 50px; }
+
+.roseship {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 25px; }
+
+@media screen and (orientation: portrait) {
+  .roseship {
+    width: 90vw; } }
+
+@media screen and (orientation: landscape) {
+  .roseship {
+    width: calc(100vh - 200px); } }
+
+.bottom-bud {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  animation: spin 20s infinite; }
+
+.top-bud {
+  width: 70%;
+  z-index: 1;
+  position: absolute;
+  animation: backspin 20s infinite; }
+
+@keyframes spin {
+  90% {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes backspin {
+  90% {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+
+.logo {
+  font: 60px 'Playfair Display', serif;
+  user-select: none;
+  z-index: 2; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }

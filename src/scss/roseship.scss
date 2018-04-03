@@ -1,0 +1,53 @@
+.roseship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 25px;
+}
+
+@media screen and (orientation:portrait) {
+    .roseship {
+        width: 90vw;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .roseship {
+        width: calc(100vh - 200px);
+    }
+}
+
+@mixin roseship-part($width-percent, $layer) {
+    width: $width-percent;
+    z-index: $layer;
+    position: absolute;
+}
+
+.bottom-bud {
+    @include roseship-part(100%, 0);
+    animation: spin 20s infinite;
+}
+
+.top-bud {
+    @include roseship-part(70%, 1);
+    animation: backspin 20s infinite;
+}
+
+@keyframes spin {
+    90% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes backspin {
+    90% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
