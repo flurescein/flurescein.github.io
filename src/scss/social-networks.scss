@@ -6,12 +6,8 @@
     user-select: none;
     z-index: 2;
 
-    & a:first-child {
-        margin-right: 50px;
-    }
-
-    & a:last-child {
-        margin-left: 50px;
+    & a {
+        margin: 0 15px;
     }
 
     .social-network {
