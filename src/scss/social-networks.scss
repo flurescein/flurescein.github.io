@@ -1,16 +1,10 @@
 .social-networks {
-    display: flex;
-    justify-content: center;
     margin-top: 25px;
-    width: 100%;
-    user-select: none;
     z-index: 2;
 
-    & a {
-        margin: 0 15px;
-    }
-
     .social-network {
+        margin: 0 15px;
+        
         img {
             width: 50px;
             height: 50px;

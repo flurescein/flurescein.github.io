@@ -2,14 +2,12 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
-  width: 100%;
-  user-select: none;
   z-index: 2; }
-  .social-networks a {
+  .social-networks .social-network {
     margin: 0 15px; }
-  .social-networks .social-network img {
-    width: 50px;
-    height: 50px; }
+    .social-networks .social-network img {
+      width: 50px;
+      height: 50px; }
 
 .roseship {
   display: flex;
@@ -52,7 +50,6 @@
 
 .logo {
   font: 60px 'Playfair Display', serif;
-  user-select: none;
   z-index: 2; }
 
 body {
@@ -63,4 +60,5 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  user-select: none; }
