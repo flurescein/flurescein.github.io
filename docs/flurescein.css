@@ -1,6 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);.social-networks {
-  display: flex;
-  justify-content: center;
   margin-top: 25px;
   z-index: 2; }
   .social-networks .social-network {
