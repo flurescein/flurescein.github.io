@@ -22,6 +22,7 @@
     width: $width-percent;
     z-index: $layer;
     position: absolute;
+    -webkit-user-drag: none;
 }
 
 .bottom-bud {

@@ -29,7 +29,6 @@ module.exports = {
         }),
         new ExtractTextPlugin('flurescein.css')
     ],
-    mode: 'production',
     devServer: {
         contentBase: __dirname
     },
